@@ -3,6 +3,10 @@
 " Auther : Li Xinjie <xjason.li@gmail.com>
 """""""""""""""""""""""""""""""""""""""""""
 
+if has("mac")
+    let Tlist_Ctags_Cmd='/opt/local/bin/ctags'
+endif
+
 " No Vi-compatible
 set nocompatible
 
