@@ -72,6 +72,7 @@ set showmatch
 set matchtime=2
 set matchpairs=(:),[:],{:},<:>
 set lazyredraw
+set guifont=YaHei_Consolas_Hybrid:h16:cANSI
 
 " Disable bells
 set noerrorbells
