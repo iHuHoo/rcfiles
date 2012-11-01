@@ -72,7 +72,70 @@ set showmatch
 set matchtime=2
 set matchpairs=(:),[:],{:},<:>
 set lazyredraw
-set guifont=YaHei_Consolas_Hybrid:h16:cANSI
+
+"
+" gui settings
+"
+if has('gui_running')
+    " 只显示菜单
+    set guioptions=mcr
+  
+    " 编辑器配色
+    "colorscheme zenburn
+    "colorscheme dusk
+  
+ 
+    if has("gui_macvim")
+        " MacVim 下的字体配置
+        set guifont=Menlo:h14
+        "set guifontwide=YaHei\ Consolas\ Hybrid\ 11
+        set guifontwide=Hei:h14
+        " 半透明和窗口大小
+        set transparency=2
+        set lines=40 columns=110
+  
+        " 使用MacVim原生的全屏幕功能
+        let s:lines=&lines
+        let s:columns=&columns
+         
+        func! FullScreenEnter()
+            set lines=999 columns=999
+            set fu
+        endf
+  
+        func! FullScreenLeave()
+            let &lines=s:lines
+            let &columns=s:columns
+            set nofu
+        endf
+  
+        func! FullScreenToggle()
+            if &fullscreen
+                call FullScreenLeave()
+            else
+                call FullScreenEnter()
+            endif
+        endf
+ 
+        " Mac 下，按 \\ 切换全屏
+        nmap <Leader><Leader>  :call FullScreenToggle()<cr>
+ 
+        " Set input method off
+        set imdisable
+  
+        " Set QuickTemplatePath
+        "let guickTemplatePath = $HOME.'/.vim/templates/'
+         
+        " 如果为空文件，则自动设置当前目录为桌面
+        lcd ~/work/
+  
+        " 自动切换到文件当前目录
+        "set autochdir
+  
+        " Set QuickTemplatePath
+        "let guickTemplatePath = $HOME.'/.vim/templates/'
+    endif
+endif
 
 " Disable bells
 set noerrorbells
@@ -154,11 +217,11 @@ hi ColorColumn ctermbg=darkgray guibg=darkgray
 
 " GUI settings
 if has('gui_running')
-    if has('win32') || has('win64')
-        set guifont=Courier_New:h9:cANSI
-    else
-        set guifont=Luxi\ Mono\ 9
-    endif
+   " if has('win32') || has('win64')
+   "     set guifont=Courier_New:h9:cANSI
+   " else
+   "     set guifont=Luxi\ Mono\ 9
+   " endif
     set guioptions-=m
     set guioptions-=T
     set t_Co=256
