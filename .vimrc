@@ -188,10 +188,10 @@ set foldlevel=100
 set backup
 set writebackup
 set backupdir=~/.tmp,/tmp
-set undofile
-set undodir=~/.tmp,/tmp
+"set undofile
+"set undodir=~/.tmp,/tmp
 set undolevels=1000
-set undoreload=10000
+"set undoreload=10000
 if !isdirectory($HOME.'/.tmp')
     if exists('*mkdir')
         call mkdir($HOME.'/.tmp', '', 0755)

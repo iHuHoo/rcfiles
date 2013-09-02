@@ -75,11 +75,13 @@ elif [ $(uname) = Darwin ]; then
     alias ls='ls -G'
 fi
 
-alias grep='grep --color=auto'
+alias grep='grep -n --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias l='ls -l'
 alias ll='ls -l'
+alias la='ls -al'
+alias rm='rm -f'
 
 if [ $(id -u) -eq 0 ]; then
     MY_PROMPT='\[\033[01;31m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]'
