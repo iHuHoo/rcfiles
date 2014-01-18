@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-[user]
-	name = iHuHoo.W
-	email = ihuhoo.w@gmail.com
-[alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-[color]
-	branch = auto
-	interactive = auto
-	status = auto
-	diff = auto
-[core]
-	eof = lf
-	excludesfile = ~/.gitignore
-=======
 [user]
 	name = iHuHoo.W
 	email = ihuhoo.w@gmail.com
@@ -30,4 +12,3 @@
     eol = lf
 	autocrlf = false
 	excludesfile = ~/.gitignore
->>>>>>> d6d8747e0c4a016797c03981833169dbcbce990f
