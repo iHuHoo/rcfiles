@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-*~
-*.un~
-*.o
-*.d
-*.a
-*.so
-*.so.*
-*.la
-*.commit
-*.rpm
-*.tar
-*.gz
-*.bz2
-*.deb
-*.sw?
-.DS_Store
-._*
-.Spotlight-V100
-.Trashes
-.netrwhist
-.svn
-cscope.*
-tags
-TAGS
-Thumbs.db
-Desktop.ini
-=======
 # .gitignore --others --exclude-from=.git/info/exclude
 # Lines that start with '#' are comments.
 # For a project mostly in C, the following would be a good set of
@@ -71,4 +43,3 @@ session.*
 .ssh/
 .subversion/
 mail/
->>>>>>> d6d8747e0c4a016797c03981833169dbcbce990f
