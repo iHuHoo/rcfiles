@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [user]
 	name = iHuHoo.W
 	email = ihuhoo.w@gmail.com
@@ -14,3 +15,19 @@
 [core]
 	eof = lf
 	excludesfile = ~/.gitignore
+=======
+[user]
+	name = iHuHoo.W
+	email = ihuhoo.w@gmail.com
+[color]
+	ui = always
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
+[core]
+    eol = lf
+	autocrlf = false
+	excludesfile = ~/.gitignore
+>>>>>>> d6d8747e0c4a016797c03981833169dbcbce990f

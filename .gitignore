@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *~
 *.un~
 *.o
@@ -24,3 +25,50 @@ tags
 TAGS
 Thumbs.db
 Desktop.ini
+=======
+# .gitignore --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+*~
+._*
+*.a
+*.bz2
+*.commit
+*.d
+*.deb
+*.elc
+*.gz
+*.la
+*.o
+*.rpm
+*.so
+*.so.*
+*.sw?
+*.tar
+*.un~
+.abbrev_defs
+.bash_history
+.DS_Store
+.emacs.before_ecb_2.40
+.ido.last
+.netrwhist
+.rnd
+.svn
+.Trashes
+_viminfo
+tags
+TAGS
+abbrev_defs
+cscope.*
+Thumbs.db
+tramp
+session.*
+.emacs.d/eshell/
+.eshell/
+.semanticdb/
+.srecode/
+.ssh/
+.subversion/
+mail/
+>>>>>>> d6d8747e0c4a016797c03981833169dbcbce990f
