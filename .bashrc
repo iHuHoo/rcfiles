@@ -1,8 +1,3 @@
-#####################################
-# ~/.bashrc
-# Author : Li Xinjie <xjason.li@gmail.com>
-#####################################
-
 # Test for an interactive shell.  There is no need to set anything
 # past this point for scp and rcp, and it's important to refrain from
 # outputting anything in those cases.
@@ -75,7 +70,7 @@ elif [ $(uname) = Darwin ]; then
     alias ls='ls -G'
 fi
 
-alias grep='grep -n --color=auto'
+alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias l='ls -l'
@@ -138,3 +133,4 @@ if [ -f ~/.rvm/scripts/rvm ]; then
     PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fi
 
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | /bin/grep -v "\["`;)" ssh
